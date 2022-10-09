@@ -1,0 +1,44 @@
+@media (max-width :991px) and (min-width :320px){
+    header .welcome {
+        clip-path:none;
+      }
+      header .container{
+        max-width: 100%;
+      }
+      header .socialLinks{
+        text-align: center;
+      }
+
+}
+@media (min-width :992px){
+  nav.myNav{
+    height: 120px;
+  }
+  nav.myNav .container{
+    position: relative;
+  }
+  nav #myNavbar ul {
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+  }
+  nav .myLogo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: .5s;
+
+  }
+  nav #myNavbar ul.menuActive {
+    opacity: 1;
+    visibility: visible;
+  }
+  nav .myLogo.activeLogo {
+    left: 0%;
+    transform: translateX(0%);
+  }}
+ @media (min-width :320px) and (max-width :991px){
+  nav #myNavbar ul li a {
+  text-align: center;
+  }
+}
